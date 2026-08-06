@@ -172,5 +172,5 @@ CURRENT COORDINATES
 <br/>
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&height=170&section=footer&animation=fadeIn&color=0:050816,30:0B1026,65:312E81,85:4C1D95,100:D6A96A" />
+<img src="https://capsule-render.vercel.app/api?type=waving&height=170&section=footer&animation=fadeIn&color=timeGradient" />
 </div>
