@@ -153,6 +153,34 @@ CURRENT COORDINATES
 
 <br/>
 
+## 🏆 Mission Achievements
+
+<div align="center">
+
+<img src="https://github-profile-trophy.vercel.app/?username=YOUR_USERNAME&theme=algolia&no-frame=true&no-bg=true&margin-w=8&margin-h=8&column=4&row=2" alt="GitHub Trophies" />
+
+</div>
+
+<br/>
+
+## 🐍 Contribution Trajectory
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/output/github-snake.svg" />
+  <img alt="GitHub Snake Animation" src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/output/github-snake.svg" />
+</picture>
+
+<br/><br/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=YOUR_USERNAME&theme=react-dark&hide_border=true&bg_color=0d0d0d&color=D9C3BB&line=D9C3BB&point=ffffff&area=true&area_color=6B5B57" alt="Activity Graph" width="100%" />
+
+</div>
+
+<br/>
+
 ## 🌠 Final Transmission
 
 > *"We are not meant to save the world. We are meant to leave it."* — reinterpreted: I don't settle for observing Earth through data alone; I build tools so others can care for it better.
