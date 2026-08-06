@@ -56,7 +56,7 @@ CURRENT COORDINATES
 🛰️ Developing computer vision models and ML pipelines using satellite imagery (Landsat, Sentinel)<br/>
 🌍 Processing Earth observation data via NASA Earthdata to analyze land cover and microclimate dynamics<br/>
 🔬 Designing end-to-end deep learning workflows in Python + PyTorch for environmental monitoring<br/>
-🤝 Interdisciplinary initiatives connecting AI, environmental science, and social impact
+🤝 Interdisciplinary initiatives connecting AI, environmental science, and strong social impact
 </sub>
 </td>
 </tr>
@@ -172,5 +172,5 @@ CURRENT COORDINATES
 <br/>
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&height=220&section=footer&animation=twinkling&color=gradient&customColorList=13,17,23,29&text=🌠 Cosmic Aurora&fontColor=ffffff&fontSize=28&fontAlign=50&fontAlignY=70" />
+<img src="./assets/gy.gif" width="100%" />
 </div>
