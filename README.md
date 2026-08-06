@@ -153,21 +153,6 @@ CURRENT COORDINATES
 
 <br/>
 
-## 📡 Live Telemetry
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=dark&hide_border=true&bg_color=0d0d0d&title_color=D9C3BB&icon_color=D9C3BB&text_color=c9c9c9" height="165"/>
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_USERNAME&theme=dark&hide_border=true&background=0d0d0d&ring=D9C3BB&fire=D9C3BB&currStreakLabel=D9C3BB" height="165"/>
-
-<br/>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&theme=dark&hide_border=true&bg_color=0d0d0d&title_color=D9C3BB&text_color=c9c9c9" height="165"/>
-
-</div>
-
-<br/>
-
 ## 🌠 Final Transmission
 
 > *"We are not meant to save the world. We are meant to leave it."* — reinterpreted: I don't settle for observing Earth through data alone; I build tools so others can care for it better.
