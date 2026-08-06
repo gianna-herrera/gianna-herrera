@@ -22,8 +22,8 @@
 <br/>
 
 <div align="center">
-  <a href="https://www.linkedin.com/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  <a href="mailto:youremail@example.com"><img src="https://img.shields.io/badge/Email-D9C3BB?style=for-the-badge&logo=gmail&logoColor=black" /></a>
+  <a href="https://www.linkedin.com/in/gianna-herrera"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="mailto:giannaherreracarrion@gmail.com"><img src="https://img.shields.io/badge/Email-D9C3BB?style=for-the-badge&logo=gmail&logoColor=black" /></a>
   <a href="#"><img src="https://img.shields.io/badge/Nexa-000000?style=for-the-badge&logo=starship&logoColor=D9C3BB" /></a>
 </div>
 
@@ -157,7 +157,7 @@ CURRENT COORDINATES
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=YOUR_USERNAME&theme=algolia&no-frame=true&no-bg=true&margin-w=8&margin-h=8&column=4&row=2" alt="GitHub Trophies" />
+<img src="https://github-profile-trophy.vercel.app/?username=gianna-herrera&theme=algolia&no-frame=true&no-bg=true&margin-w=8&margin-h=8&column=4&row=2" alt="GitHub Trophies" />
 
 </div>
 
@@ -168,14 +168,14 @@ CURRENT COORDINATES
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/output/github-snake.svg" />
-  <img alt="GitHub Snake Animation" src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/output/github-snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/gianna-herrera/gianna-herrera/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/gianna-herrera/gianna-herrera/output/github-snake.svg" />
+  <img alt="GitHub Snake Animation" src="https://raw.githubusercontent.com/gianna-herrera/gianna-herrera/output/github-snake.svg" />
 </picture>
 
 <br/><br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=YOUR_USERNAME&theme=react-dark&hide_border=true&bg_color=0d0d0d&color=D9C3BB&line=D9C3BB&point=ffffff&area=true&area_color=6B5B57" alt="Activity Graph" width="100%" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=gianna-herrera&theme=react-dark&hide_border=true&bg_color=0d0d0d&color=D9C3BB&line=D9C3BB&point=ffffff&area=true&area_color=6B5B57" alt="Activity Graph" width="100%" />
 
 </div>
 
