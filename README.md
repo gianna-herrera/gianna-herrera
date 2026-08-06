@@ -157,25 +157,17 @@ CURRENT COORDINATES
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=gianna-herrera&theme=algolia&no-frame=true&no-bg=true&margin-w=8&margin-h=8&column=4&row=2" alt="GitHub Trophies" />
+<img src="https://github-profile-trophy-nexa-org.vercel.app/?username=gianna-herrera&theme=algolia&no-frame=true&no-bg=true&margin-w=8&margin-h=8&column=4&row=2" alt="GitHub Trophies" />
 
 </div>
 
 <br/>
 
-## 🐍 Contribution Trajectory
+## 🌌 Contribution Constellation
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/gianna-herrera/gianna-herrera/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/gianna-herrera/gianna-herrera/output/github-snake.svg" />
-  <img alt="GitHub Snake Animation" src="https://raw.githubusercontent.com/gianna-herrera/gianna-herrera/output/github-snake.svg" />
-</picture>
-
-<br/><br/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=gianna-herrera&theme=react-dark&hide_border=true&bg_color=0d0d0d&color=D9C3BB&line=D9C3BB&point=ffffff&area=true&area_color=6B5B57" alt="Activity Graph" width="100%" />
+<img src="https://ghchart.rshah.org/D4AF37/gianna-herrera" alt="Contribution Chart" width="100%" />
 
 </div>
 
