@@ -166,9 +166,7 @@ CURRENT COORDINATES
 ## 🌌 Contribution Constellation
 
 <div align="center">
-
-<img src="https://ghchart.rshah.org/D4AF37/gianna-herrera" alt="Contribution Chart" width="100%" />
-
+  <img src="https://ghchart.rshah.org/F472B6/gianna-herrera" alt="Contribution Chart" width="100%" />
 </div>
 
 <br/>
