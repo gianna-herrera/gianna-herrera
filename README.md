@@ -153,20 +153,10 @@ CURRENT COORDINATES
 
 <br/>
 
-## 🏆 Mission Achievements
-
-<div align="center">
-
-<img src="https://github-profile-trophy-nexa-org.vercel.app/?username=gianna-herrera&theme=algolia&no-frame=true&no-bg=true&margin-w=8&margin-h=8&column=4&row=2" alt="GitHub Trophies" />
-
-</div>
-
-<br/>
-
 ## 🌌 Contribution Constellation
 
 <div align="center">
-  <img src="https://ghchart.rshah.org/F472B6/gianna-herrera" alt="Contribution Chart" width="100%" />
+  <img src="https://ghchart.rshah.org/4F46E5/gianna-herrera" alt="Contribution Chart" width="100%" />
 </div>
 
 <br/>
@@ -182,5 +172,5 @@ CURRENT COORDINATES
 <br/>
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0d0d0d&height=100&section=footer" />
+<img src="https://capsule-render.vercel.app/api?type=waving&height=140&section=footer&text=&fontSize=0&animation=fadeIn&customColorList=0,2,5,10,20" />
 </div>
