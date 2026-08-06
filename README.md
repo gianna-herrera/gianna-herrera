@@ -171,6 +171,8 @@ CURRENT COORDINATES
 
 <br/>
 
+
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&height=170&section=footer&animation=fadeIn&color=gradient&customColorList=14,18,20,24" />
+<img src="https://capsule-render.vercel.app/api?type=waving&height=220&section=footer&animation=twinkling&color=gradient&customColorList=13,17,23,29&text=🌠 Cosmic Aurora&fontColor=ffffff&fontSize=28&fontAlign=50&fontAlignY=70" />
 </div>
+
