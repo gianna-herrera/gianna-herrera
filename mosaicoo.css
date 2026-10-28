@@ -1,0 +1,56 @@
+/* ===== SHOWCASE: Mosaic Flip =====
+   Todo está limitado a #showcase para no afectar el resto del portafolio
+   (navbar, secciones, etc.). Se carga después de style.css. */
+
+#showcase{
+  padding:60px 0 50px;
+  overflow:hidden;               /* recorta las fichas 3D que sobresalen */
+}
+
+#showcase .mosaic{
+  position:relative;
+  width:min(100%,860px);
+  aspect-ratio:4/3;
+  margin:40px auto 0;
+  perspective:800px;             /* el JS lo ajusta según la escala */
+  transform-style:preserve-3d;
+  cursor:pointer;
+  -webkit-tap-highlight-color:transparent;
+}
+
+#showcase .project-preview{
+  position:absolute;
+  top:0;
+  left:0;
+  width:720px;
+  height:540px;
+  transform-origin:0 0;
+  display:grid;
+  grid-template-columns:repeat(12,60px);
+  grid-template-rows:repeat(9,60px);
+  transform-style:preserve-3d;
+}
+
+#showcase .tile{
+  width:60px;
+  height:60px;
+  position:relative;
+  transform-style:preserve-3d;
+  will-change:transform;
+}
+
+#showcase .tile-face{
+  position:absolute;
+  width:60px;
+  height:60px;
+  background-size:cover;
+  background-position:center;
+  backface-visibility:hidden;
+}
+
+#showcase .face-front{transform:translateZ(30px)}
+#showcase .face-rear{transform:rotateY(180deg) translateZ(30px)}
+#showcase .face-right{transform:rotateY(90deg) translateZ(30px)}
+#showcase .face-left{transform:rotateY(-90deg) translateZ(30px)}
+#showcase .face-top{transform:rotateX(90deg) translateZ(30px);background:#1d1330}
+#showcase .face-bottom{transform:rotateX(-90deg) translateZ(30px);background:#1d1330}

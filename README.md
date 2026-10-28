@@ -1,15 +1,15 @@
 <div align="center">
 
-<img src="./assets/banner.png" alt="Gianna Herrera Banner" width="100%" />
+<img src="images/readme/banner.png" alt="Gianna Herrera Banner" width="100%" />
 
 <table>
 <tr>
-<td width="50%"><img src="./assets/deep-learning.png" width="100%" /></td>
-<td width="50%"><img src="./assets/earth-observation.png" width="100%" /></td>
+<td width="50%"><img src="images/readme/deep-learning.png" width="100%" /></td>
+<td width="50%"><img src="images/readme/earth-observation.png" width="100%" /></td>
 </tr>
 <tr>
-<td width="50%"><img src="./assets/founder-nexa.png" width="100%" /></td>
-<td width="50%"><img src="./assets/open-science.png" width="100%" /></td>
+<td width="50%"><img src="images/readme/founder-nexa.png" width="100%" /></td>
+<td width="50%"><img src="images/readme/open-science.png" width="100%" /></td>
 </tr>
 </table>
 
