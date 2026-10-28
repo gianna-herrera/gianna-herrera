@@ -24,13 +24,22 @@ document.querySelectorAll('.g').forEach(function(c){c.addEventListener('mousemov
 // GSAP
 window.addEventListener('load',function(){
   if(!window.gsap)return; gsap.registerPlugin(ScrollTrigger);
-  var t=gsap.timeline({defaults:{ease:'power4.out'}});
-  t.from('nav',{y:-70,opacity:0,duration:.9})
-   .from('.title .pill',{opacity:0,y:20,duration:.7},'-=.4')
-   .from('.title .row1 span',{yPercent:120,opacity:0,duration:1,stagger:.12},'-=.4')
-   .from('.title .big',{yPercent:60,opacity:0,duration:1.2},'-=.8')
-   .from('.portrait',{y:140,opacity:0,duration:1.4},'-=1')
-   .from('.hero-foot>*,.chip',{opacity:0,y:30,duration:.8,stagger:.1},'-=.6');
+  var gate=document.getElementById('gate');
+var hasGate=gate&&getComputedStyle(gate).display!=='none';
+var t=gsap.timeline({paused:true,defaults:{ease:'power4.out'}});
+t.from('.title .pill',{opacity:0,y:20,duration:.7})
+ .from('.title .row1 span',{yPercent:120,opacity:0,duration:1,stagger:.12},'-=.4')
+ .from('.title .big',{yPercent:60,opacity:0,duration:1.2},'-=.8')
+ .from('.portrait',{y:140,opacity:0,duration:1.4},'-=1')
+ .from('.hero-foot>*,.chip',{opacity:0,y:30,duration:.8,stagger:.1},'-=.6');
+
+if(hasGate){
+  /* el hero se revela cuando el zoom del gate ya terminó */
+  ScrollTrigger.create({trigger:'#hero',start:'top 60%',once:true,onEnter:function(){t.play()}});
+}else{
+  gsap.from('nav',{y:-70,opacity:0,duration:.9});
+  t.play();
+}
   gsap.to('.chip.c1',{y:-14,x:8,duration:2.6,yoyo:true,repeat:-1,ease:'sine.inOut'});
   gsap.to('.chip.c2',{y:12,x:-8,duration:3.1,yoyo:true,repeat:-1,ease:'sine.inOut'});
   gsap.to('.spark',{rotate:180,scale:1.4,duration:3,yoyo:true,repeat:-1,stagger:.5,ease:'sine.inOut'});

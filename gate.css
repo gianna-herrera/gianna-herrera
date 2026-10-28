@@ -1,0 +1,99 @@
+#gate{
+  --gx-ink:#050504;
+  --gx-accent:var(--pur-l,#c9b6ff);
+  --gx-bone:#f1eefa;
+  --gx-pad:clamp(1.25rem,5vw,4.5rem);
+  position:relative;z-index:2;
+  background:var(--gx-ink);color:var(--gx-bone);
+  font-family:"Inter",system-ui,sans-serif;
+}
+#gate img{display:block}
+html.gx-lock,html.gx-lock body{overflow:hidden}
+
+.gx-it{font-family:"Instrument Serif",serif;font-style:italic;font-weight:400}
+
+.gx-stage{position:relative;height:100vh;height:100svh;overflow:hidden;background:var(--gx-ink)}
+.gx-layer{position:absolute;inset:0;pointer-events:none}
+
+/* Fondo: Gargantúa anclado a la derecha */
+.gx-bg-inner{
+  position:absolute;right:0;top:50%;
+  width:max(100vw,178svh);aspect-ratio:16/9;
+  transform-origin:88% 36%;
+  will-change:transform;
+}
+.gx-bg-inner img{width:100%;height:100%;object-fit:cover}
+
+/* Título dentro de la ventana */
+.gx-window-title{
+  display:grid;place-content:center;text-align:center;gap:.5rem;
+  will-change:transform,opacity;
+  background:radial-gradient(circle at center,rgba(5,5,4,.55) 0,rgba(5,5,4,.25) 14vw,transparent 24vw);
+}
+.gx-window-title h1{
+  font-family:"Instrument Serif",serif;font-weight:400;
+  font-size:clamp(1.8rem,3.8vw,3.6rem);letter-spacing:.005em;line-height:1;
+  text-shadow:0 0 30px rgba(0,0,0,.6);
+}
+.gx-window-title p{
+  font-size:clamp(.68rem,.95vw,.85rem);font-weight:500;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--gx-accent);
+}
+
+/* Marco: el centro del hueco coincide con el centro de la pantalla */
+.gx-frame{
+  position:absolute;left:50%;top:50%;
+  width:max(102vw,173svh);aspect-ratio:1586/992;
+  transform-origin:49.49% 46.42%;
+  will-change:transform;
+}
+.gx-frame img{width:100%;height:auto}
+
+/* Textos */
+.gx-copy{position:absolute;z-index:5}
+.gx-line{display:block;overflow:hidden;padding-bottom:.08em}
+.gx-line>span{display:block}
+.gx-tl,.gx-br{
+  font-family:"Instrument Serif",serif;font-weight:400;
+  font-size:clamp(2.8rem,7.4vw,7.4rem);line-height:.92;letter-spacing:-.01em;
+  text-shadow:0 2px 40px rgba(0,0,0,.35);
+}
+.gx-tl{left:var(--gx-pad);top:clamp(5.5rem,17svh,11rem)}
+.gx-br{right:var(--gx-pad);bottom:clamp(8rem,22svh,15rem);text-align:right}
+.gx-bl{left:var(--gx-pad);bottom:clamp(2rem,7svh,4.5rem);max-width:min(24rem,70vw)}
+.gx-lead{font-family:"Instrument Serif",serif;font-size:clamp(1.3rem,2vw,1.8rem);line-height:1.1}
+.gx-rule{display:block;width:2.2rem;height:2px;background:var(--gx-accent);margin:1.1rem 0}
+.gx-body{font-size:clamp(.78rem,1vw,.92rem);font-weight:400;line-height:1.55;opacity:.85}
+
+.gx-cta{
+  position:absolute;z-index:6;left:50%;bottom:clamp(1.4rem,3.5svh,2.4rem);transform:translateX(-50%);
+  display:inline-flex;align-items:center;gap:.9rem;
+  padding:.35rem .35rem .35rem 1.4rem;border-radius:999px;
+  background:var(--gx-accent);color:#0b0713;font-weight:500;font-size:.9rem;white-space:nowrap;
+  text-decoration:none;transition:background .3s ease,gap .3s ease;
+}
+.gx-cta svg{box-sizing:content-box;padding:.65rem;border-radius:50%;background:#0b0713;color:var(--gx-accent)}
+.gx-cta:hover{background:var(--gx-bone);gap:1.2rem}
+
+.gx-cue{
+  position:absolute;z-index:5;right:var(--gx-pad);bottom:clamp(2rem,7svh,4.5rem);
+  display:grid;grid-template-columns:auto auto;gap:.2rem 3rem;
+  font-size:.7rem;font-weight:500;letter-spacing:.06em;width:min(21rem,38vw);
+}
+.gx-cue-line{grid-column:1/-1;height:1px;background:var(--gx-bone);opacity:.7;margin-bottom:1rem;transform-origin:left}
+.gx-cue span:nth-child(3){text-align:right}
+
+.gx-outro{
+  position:absolute;z-index:5;left:var(--gx-pad);top:50%;transform:translateY(-50%);
+  max-width:min(40rem,88vw);opacity:0;visibility:hidden;
+}
+.gx-outro::before{content:"";position:absolute;inset:-35% -30% -35% -45%;z-index:-1;background:radial-gradient(closest-side,rgba(5,5,4,.78),rgba(5,5,4,.35) 60%,transparent)}
+.gx-outro h2{font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(2.2rem,5vw,4.6rem);line-height:1;letter-spacing:-.01em;text-shadow:0 2px 40px rgba(0,0,0,.6)}
+.gx-outro p{margin-top:1.2rem;font-weight:500;font-size:clamp(.85rem,1.1vw,1rem);color:var(--gx-accent)}
+
+@media (max-width:700px){
+  .gx-bl .gx-body,.gx-cue{display:none}
+  .gx-br{bottom:clamp(6rem,17svh,9rem)}
+}
+/* Con "reducir movimiento" se omite el gate y se ve el hero directamente */
+@media (prefers-reduced-motion:reduce){ #gate{display:none} }
