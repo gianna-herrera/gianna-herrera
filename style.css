@@ -22,31 +22,41 @@ h2 .serif{color:var(--pur-l)}
 .ph:hover img{transform:scale(1.06)}
 /* nav */
 nav{position:fixed;top:0;left:0;right:0;z-index:60;display:flex;justify-content:space-between;align-items:center;padding:calc(16px + env(safe-area-inset-top,0px)) 4% 16px}
-.logo{font-size:1.5rem}
-.logo{display:inline-flex;align-items:center;gap:10px}
+.logo{font-size:1.5rem;display:inline-flex;align-items:center;gap:10px}
 .logo-icon{width:30px;height:30px;border-radius:8px;flex:none}
-
 .menu{display:flex;gap:6px;list-style:none;background:rgba(20,14,32,.6);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--line);border-radius:99px;padding:6px}
 .menu a{display:block;padding:9px 15px;border-radius:99px;font-size:.84rem;color:var(--mute);transition:.3s}
 .menu a:hover,.menu a.on{background:rgba(255,255,255,.1);color:var(--ink)}
 #burger{display:none;background:rgba(20,14,32,.7);border:1px solid var(--line);color:var(--ink);width:44px;height:44px;border-radius:50%;font-size:1.2rem;cursor:pointer}
 #bar{position:fixed;top:0;left:0;height:2px;width:100%;background:var(--pur-l);transform:scaleX(0);transform-origin:left;z-index:70}
-/* hero */
+
+/* ===== HERO ===== */
 #hero{min-height:100svh;padding:120px 0 0;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;position:relative}
-.hero-bg{position:absolute;inset:0;border-radius:0;opacity:.45;-webkit-mask:radial-gradient(ellipse at 50% 40%,#000,transparent 70%);mask:radial-gradient(ellipse at 50% 40%,#000,transparent 70%)}
-.stage{position:relative;height:min(82vh,760px);width:min(1180px,94%);margin:auto}
-.title{position:absolute;top:2%;left:0;right:0;text-align:center;z-index:1;line-height:.9}
-.title .row1{display:flex;justify-content:space-between;font-size:clamp(2.6rem,9vw,8rem);padding:0 2%;margin-bottom:.1em}
-.title .big{display:block;font-size:clamp(3.4rem,15.5vw,14rem);font-weight:800;letter-spacing:-.05em;color:var(--pur-l);text-transform:uppercase}
+.hero-bg{position:absolute;inset:0;border-radius:0;opacity:.85;-webkit-mask:radial-gradient(ellipse at 55% 40%,#000 35%,transparent 80%);mask:radial-gradient(ellipse at 55% 40%,#000 35%,transparent 80%)}
+.stage{position:relative;height:max(520px,min(54vw,calc(100svh - 100px)));width:min(1500px,72vw);margin:auto}
+
+/* Título: "Software & AI" + "GIANNA HERRERA", todo en blanco */
+.title{position:absolute;top:2%;left:50%;width:100vw;margin-left:-50vw;text-align:center;z-index:1;line-height:.9;white-space:nowrap}
+.title .pill{font-size:clamp(.78rem,1.05vw,1.2rem);padding:.5em 1.2em}
+.title .row1{display:flex;justify-content:center;font-size:12.4vw;padding:0;margin-bottom:.05em;color:#fff}
+.title .big{display:block;font-size:14.5vw;font-weight:800;letter-spacing:-.05em;line-height:.86;color:#fff;text-transform:uppercase}
+
+/* Retrato por encima del texto */
 .portrait-wrap{position:absolute;inset:0;z-index:2;display:flex;justify-content:center;align-items:flex-end;pointer-events:none;overflow:hidden}
-.portrait{height:84%;aspect-ratio:3/4;max-width:100%;display:flex;justify-content:center;align-items:flex-end;border-radius:50% 50% 0 0}
+.portrait{height:66%;aspect-ratio:3/4;max-width:100%;display:flex;justify-content:center;align-items:flex-end;border-radius:50% 50% 0 0}
 .portrait img{display:block;height:100%;width:100%;object-fit:contain;object-position:center bottom}
 
+/* Textos inferiores */
 .hero-foot{position:absolute;bottom:26px;left:0;right:0;z-index:3;display:flex;justify-content:space-between;align-items:flex-end;gap:20px;padding:0 2%}
-.hero-foot p{font-size:.78rem;max-width:230px;color:var(--ink);font-weight:500;letter-spacing:.02em}.hero-foot p:last-child{text-align:right;color:var(--mute);font-weight:400}
-.chip{position:absolute;z-index:3;font-size:.8rem;font-weight:500;padding:6px 14px;border-radius:10px;color:#0a0612}
-.chip.c1{left:6%;top:44%;background:var(--pur-l)}.chip.c2{right:6%;top:56%;background:#fff}
+.hero-foot p{font-size:clamp(.78rem,1.05vw,1.15rem);max-width:max(230px,17vw);color:#fff;font-weight:500;letter-spacing:.02em}
+.hero-foot p:last-child{text-align:right}
+
+/* Chips flotantes */
+.chip{position:absolute;z-index:3;font-size:clamp(.8rem,1.05vw,1.2rem);font-weight:500;padding:.4em .9em;border-radius:10px;white-space:nowrap}
+.chip.c1{left:1.5%;top:75%;background:rgba(255,255,255,.08);color:#fff;border:1px solid var(--line);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.chip.c2{right:11%;top:77%;background:#fff;color:#0a0612}
 .spark{position:absolute;color:var(--pur-l);opacity:.5;font-size:1.3rem;z-index:1}
+
 /* about */
 .about{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
 .about .ph{aspect-ratio:4/5}
@@ -99,10 +109,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:60;display:flex;justify-content:
 .fan{overflow-x:auto;justify-content:flex-start;padding:30px 20px 20px;scroll-snap-type:x mandatory}.proj{margin:0 8px;--r:0deg!important;--y:0px!important;width:62vw;scroll-snap-align:center}
 section{padding:80px 0}
 
-.stage{height:min(88svh,700px)}
+.stage{height:min(88svh,700px);width:min(1180px,94%)}
 .portrait{height:78%}
-.title{z-index:3}
-.title .big{font-size:clamp(3rem,17vw,6rem)}
+.title .big{font-size:clamp(3rem,16vw,8rem)}
 
 .hero-foot p:last-child{display:none}
 .hero-foot{flex-direction:column;align-items:center;text-align:center;gap:12px;bottom:16px;padding:0 5%}
@@ -118,7 +127,7 @@ section{padding:80px 0}
 
 #contact{text-align:left}
 }
-@media(max-width:560px){.grid{grid-template-columns:1fr}.chip{display:none}.title .row1{font-size:clamp(2rem,11vw,3rem)}}
+@media(max-width:560px){.grid{grid-template-columns:1fr}.chip{display:none}.title .row1{font-size:clamp(2rem,13vw,4.5rem)}}
 /* ===== VOICES: testimonial carousel ===== */
 #voices{overflow:hidden;padding-top:40px}
 .tstage{display:grid;justify-items:center;align-items:center;margin-top:30px;padding:20px 0;touch-action:pan-y;cursor:grab}
