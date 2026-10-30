@@ -32,7 +32,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:60;display:flex;justify-content:
 
 /* ===== HERO ===== */
 #hero{min-height:100svh;padding:120px 0 0;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;position:relative}
-.hero-bg{position:absolute;inset:0;border-radius:0;opacity:.85;-webkit-mask:radial-gradient(ellipse at 55% 40%,#000 35%,transparent 80%);mask:radial-gradient(ellipse at 55% 40%,#000 35%,transparent 80%)}
+.hero-bg{position:absolute;inset:0;border-radius:0;opacity:.95;-webkit-mask:radial-gradient(ellipse at 55% 40%,#000 35%,transparent 80%);mask:radial-gradient(ellipse at 55% 40%,#000 35%,transparent 80%)}
 .stage{position:relative;height:max(520px,min(54vw,calc(100svh - 100px)));width:min(1500px,72vw);margin:auto}
 
 /* Título: "Software & AI" + "GIANNA HERRERA", todo en blanco */
@@ -95,6 +95,19 @@ nav{position:fixed;top:0;left:0;right:0;z-index:60;display:flex;justify-content:
 .sub{margin:56px 0 22px;font-size:2rem}
 /* contact + footer */
 #contact{text-align:right;padding-bottom:60px}
+#contact .wrap{display:grid;grid-template-columns:.85fr 1.15fr;align-items:center;gap:20px}
+.contact-text{text-align:right}
+/* Astronauta flotando */
+.astro{display:flex;justify-content:center;align-items:center}
+.astro img{width:min(100%,540px);height:auto;filter:drop-shadow(0 30px 60px rgba(183,148,255,.25));animation:astroFloat 7s ease-in-out infinite;will-change:transform}
+@keyframes astroFloat{
+  0%,100%{transform:translate(0,0) rotate(-3deg)}
+  25%{transform:translate(10px,-14px) rotate(0deg)}
+  50%{transform:translate(0,-28px) rotate(3deg)}
+  75%{transform:translate(-10px,-12px) rotate(0deg)}
+}
+/* Botón más grande */
+.btn.btn-xl{font-size:1.2rem;padding:22px 46px;gap:14px}
 #contact .big{font-size:clamp(2.6rem,9vw,7rem);line-height:1;letter-spacing:-.04em;margin:.6rem 0 1.6rem}
 #contact .big .serif{display:block;color:var(--mute)}
 .foot{display:grid;grid-template-columns:1.4fr 1fr;gap:18px;margin-bottom:40px}
@@ -126,6 +139,9 @@ section{padding:80px 0}
 }
 
 #contact{text-align:left}
+#contact .wrap{grid-template-columns:1fr;gap:10px}
+.contact-text{text-align:left}
+.astro img{width:min(70%,360px)}
 }
 @media(max-width:560px){.grid{grid-template-columns:1fr}.chip{display:none}.title .row1{font-size:clamp(2rem,13vw,4.5rem)}}
 /* ===== VOICES: testimonial carousel ===== */
