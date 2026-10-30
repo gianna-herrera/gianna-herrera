@@ -11,6 +11,7 @@ GALLERY.forEach(function(r,i){
   var html=r.map(function(f){return '<div class="ph" data-label="'+f+'"><img src="images/gallery/'+f+'" alt="" loading="lazy" onerror="this.remove()"></div>'}).join('');
   d.innerHTML=html+html; rows.appendChild(d);
 });
+
 // starfield
 (function(){var c=document.getElementById('stars'),x=c.getContext('2d'),W,H,S=[];
 function z(){W=c.width=innerWidth;H=c.height=innerHeight;S=[];for(var i=0;i<Math.min(140,W*H/9000);i++)S.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*1.2+.3,p:Math.random()*6.3,v:Math.random()*.02+.005})}

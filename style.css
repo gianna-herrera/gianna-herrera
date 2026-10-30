@@ -23,6 +23,9 @@ h2 .serif{color:var(--pur-l)}
 /* nav */
 nav{position:fixed;top:0;left:0;right:0;z-index:60;display:flex;justify-content:space-between;align-items:center;padding:calc(16px + env(safe-area-inset-top,0px)) 4% 16px}
 .logo{font-size:1.5rem}
+.logo{display:inline-flex;align-items:center;gap:10px}
+.logo-icon{width:30px;height:30px;border-radius:8px;flex:none}
+
 .menu{display:flex;gap:6px;list-style:none;background:rgba(20,14,32,.6);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--line);border-radius:99px;padding:6px}
 .menu a{display:block;padding:9px 15px;border-radius:99px;font-size:.84rem;color:var(--mute);transition:.3s}
 .menu a:hover,.menu a.on{background:rgba(255,255,255,.1);color:var(--ink)}
