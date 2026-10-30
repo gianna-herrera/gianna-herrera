@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="mosaicoo.css">
+<link rel="stylesheet" href="journey-cover.css">
 </head>
 <body>
 <div id="bar"></div><canvas id="stars"></canvas>
@@ -36,10 +37,7 @@
 
     <div class="portrait-wrap"> <div class="portrait"><img src="images/hero/g.png" alt="Gianna Herrera" onerror="this.remove()"></div> </div>
     <span class="chip c1">AI for Climate</span><span class="chip c2">Gianna</span>
-    <div class="hero-foot">
-      <p>Founder of Nexa Global Impact and software development student. I use technology and AI to build resilient, inclusive communities.</p>
-      <p>Stanford Code in Place · UNITAR Fellow · GCI World 2026</p>
-    </div>
+    
   </div>
 </header>
 
@@ -84,12 +82,14 @@
 <section id="journey"><div class="wrap">
   <span class="pill">Journey</span><h2>Missions & <span class="serif">experience</span></h2>
   <div class="grid">
-    <div class="g rv"><div class="m">May 2026 – Present · Lima</div><h3>Founder & Project Lead</h3><div class="org">Nexa Global Impact</div><p style="margin-top:10px">Building accessible digital solutions for underserved communities, shelters and grassroots organizations worldwide.</p></div>
-    <div class="g rv"><div class="m">Oct 2026 – Present · Remote</div><h3>Section Leader</h3><div class="org">Stanford University · Code in Place</div><p style="margin-top:10px">Mentoring international students in Python, leading weekly sections and reviewing assignments.</p></div>
-    <div class="g rv"><div class="m">Sep 2026 – Present · Hiroshima</div><h3>UNITAR Leadership Fellow</h3><div class="org">Women’s Leadership in Disaster Risk Reduction</div><p style="margin-top:10px">One of 500 participants worldwide, developing DRR frameworks aligned with the Sendai Framework.</p></div>
-    <div class="g rv"><div class="m">Sep 2026 – Present · Tokyo</div><h3>Selected Participant</h3><div class="org">GCI World 2026 · U-Tokyo Matsuo-Iwasawa Lab</div><p style="margin-top:10px">Hands-on data science and machine learning with Python, SQL and time series analysis.</p></div>
-    <div class="g rv"><div class="m">Aug 2026 – Present · Remote</div><h3>Climate x Scholar</h3><div class="org">Global Alliance of Universities on Climate</div><p style="margin-top:10px">Developing an AI-driven early-warning framework for vulnerable communities.</p></div>
-    <div class="g rv"><div class="m">Jul 2026 – Present · Toronto</div><h3>Research Trainee</h3><div class="org">Climate Change AI Summer School</div><p style="margin-top:10px">Applying machine learning to environmental data and sustainable technologies.</p></div>
+    <div class="g rv"><div class="cover" data-label="nexa.jpg"><img src="images/journey/nexa.jpg" alt="" loading="lazy" onerror="this.remove()"></div><div class="m">May 2026 – Present · Lima</div><h3>Founder & Project Lead</h3><div class="org">Nexa Global Impact</div><p style="margin-top:10px">Building accessible digital solutions for underserved communities, shelters and grassroots organizations worldwide.</p></div>
+    <div class="g rv"><div class="cover" data-label="stanford.jpg"><img src="images/journey/stanford.jpg" alt="" loading="lazy" onerror="this.remove()"></div><div class="m">Oct 2026 – Present · Remote</div><h3>Section Leader</h3><div class="org">Stanford University · Code in Place</div><p style="margin-top:10px">Mentoring international students in Python, leading weekly sections and reviewing assignments.</p></div>
+    <div class="g rv"><div class="cover" data-label="unitar.jpg"><img src="images/journey/unitar.jpg" alt="" loading="lazy" onerror="this.remove()"></div><div class="m">Sep 2026 – Present · Hiroshima</div><h3>UNITAR Leadership Fellow</h3><div class="org">Women’s Leadership in Disaster Risk Reduction</div><p style="margin-top:10px">One of 500 participants worldwide, developing DRR frameworks aligned with the Sendai Framework.</p></div>
+    <div class="g rv"><div class="cover" data-label="gci.jpg"><img src="images/journey/gci.jpg" alt="" loading="lazy" onerror="this.remove()"></div><div class="m">Sep 2026 – Present · Tokyo</div><h3>Selected Participant</h3><div class="org">GCI World 2026 · U-Tokyo Matsuo-Iwasawa Lab</div><p style="margin-top:10px">Hands-on data science and machine learning with Python, SQL and time series analysis.</p></div>
+    <div class="g rv"><div class="cover" data-label="gauc.jpg"><img src="images/journey/gauc.jpg" alt="" loading="lazy" onerror="this.remove()"></div><div class="m">Aug 2026 – Present · Remote</div><h3>Climate x Scholar</h3><div class="org">Global Alliance of Universities on Climate</div><p style="margin-top:10px">Developing an AI-driven early-warning framework for vulnerable communities.</p></div>
+    <div class="g rv"><div class="cover" data-label="climate-change-ai.jpg"><img src="images/journey/climate-change-ai.jpg" alt="" loading="lazy" onerror="this.remove()"></div><div class="m">Jul 2026 – Present · Toronto</div><h3>Research Trainee</h3><div class="org">Climate Change AI Summer School</div><p style="margin-top:10px">Applying machine learning to environmental data and sustainable technologies.</p></div>
+    <div class="g rv"><div class="cover" data-label="new-haven.jpg"><img src="images/journey/new-haven.jpg" alt="" loading="lazy" onerror="this.remove()"></div><div class="m">Aug 2026 – Present · Remote</div><h3>Board Member</h3><div class="org">University of New Haven · Women in Leadership with AI-Driven Engagement Executive Program</div><p style="margin-top:10px">Advising on responsible AI, innovation, and technology leadership to support socially impactful initiatives.</p></div>
+    <div class="g rv"><div class="cover" data-label="lala.jpg"><img src="images/journey/lala.jpg" alt="" loading="lazy" onerror="this.remove()"></div><div class="m">Aug 2026 – Present · Remote</div><h3>Leadership Mentor</h3><div class="org">Latin American Leadership Academy (LALA) · LALA 2026.2 Mentorship Program</div><p style="margin-top:10px">Mentoring students in the English-speaking cohort through goal-setting, leadership development, and meaningful personal growth conversations.</p></div>
   </div>
 </div></section>
 
@@ -133,194 +133,159 @@
     <h2>What people <span class="serif">say</span></h2>
   </div> 
 
-  <div class="tstage" id="tcar"> 
+  <div class="tstage" id="tcar">
 
     <!-- TESTIMONIAL 1 -->
-    <article class="tcard"> 
-      <span class="qm">“</span> 
+    <article class="tcard">
+      <span class="qm">“</span>
       <p class="tq">
-        Tuve el placer de organizar un evento en línea para GAUC con Gianna. 
-        Colaboró conmigo excepcionalmente bien y realizó una excelente presentación 
-        sobre cómo utilizar la inteligencia artificial y los datos satelitales de 
-        NASA para predecir futuros cambios climáticos y patrones meteorológicos, 
-        así como su impacto general. Sus aportes fueron tanto informativos como 
-        inspiradores. Recomiendo ampliamente a Gianna para futuros trabajos y 
-        colaboraciones.
-      </p> 
+        Gianna was one of the people who made the Aspire experience more meaningful for many of us. As a Campus Leader, she was always willing to help, answer questions, and connect participants with opportunities they might otherwise have missed. What stood out most was her genuine interest in supporting others' growth and success.
+      </p>
+      <div class="who">
+        <div class="av">LO</div>
+        <div>
+          <div class="nm">Luis Orellana</div>
+          <div class="rl">Aspire Leaders Program</div>
+        </div>
+      </div>
+    </article>
+
+    <!-- TESTIMONIAL 2 -->
+    <article class="tcard">
+      <span class="qm">“</span>
+      <p class="tq">
+        Working with Gianna through the Aspire community was a great experience. She brings positive energy, leadership, and a strong sense of responsibility to everything she does. She has a unique ability to bring people together and create a welcoming environment where everyone feels encouraged to contribute.
+      </p>
+      <div class="who">
+        <div class="av">AB</div>
+        <div>
+          <div class="nm">Andrea Balcarcel</div>
+          <div class="rl">Aspire Leaders Program</div>
+        </div>
+      </div>
+    </article>
+
+    <!-- TESTIMONIAL 3 -->
+    <article class="tcard">
+      <span class="qm">“</span>
+      <p class="tq">
+        Gianna is the kind of person who combines curiosity, intelligence, and action. During our time in the LALA community, I was always impressed by how she transformed ideas into real initiatives and how naturally she shared her knowledge with others. Her commitment to learning and creating impact is truly inspiring.
+      </p>
+      <div class="who">
+        <div class="av">AK</div>
+        <div>
+          <div class="nm">Amanda Koyle</div>
+          <div class="rl">Latin American Leadership Academy (LALA)</div>
+        </div>
+      </div>
+    </article>
+
+    <!-- TESTIMONIAL 4 -->
+    <article class="tcard">
+      <span class="qm">“</span>
+      <p class="tq">
+        It was a pleasure collaborating with Gianna through LALA. She consistently approached challenges with creativity and determination, and she always looked for ways to help others succeed alongside her.
+      </p>
+      <div class="who">
+        <div class="av">RD</div>
+        <div>
+          <div class="nm">Riley Downs</div>
+          <div class="rl">Latin American Leadership Academy (LALA)</div>
+        </div>
+      </div>
+    </article>
+
+    <!-- TESTIMONIAL 5 -->
+    <article class="tcard">
+      <span class="qm">“</span>
+      <p class="tq">
+        I had the opportunity to attend sessions taught by Gianna, and what I appreciated most was her ability to explain complex topics in a simple and engaging way. She encouraged participation, welcomed questions, and created an environment where students felt comfortable learning and sharing their ideas. Her passion for education is evident in every class she leads.
+      </p>
+      <div class="who">
+        <div class="av">AE</div>
+        <div>
+          <div class="nm">Arturo Espinoza</div>
+          <div class="rl">Leadership School, Universidad César Vallejo</div>
+        </div>
+      </div>
+    </article>
+
+    <!-- TESTIMONIAL 6 -->
+    <article class="tcard">
+      <span class="qm">“</span>
+      <p class="tq">
+        Working with Gianna at Teach Revolution was a wonderful experience. Her presentations on artificial intelligence, satellite imagery, and climate change demonstrated not only impressive technical knowledge but also an exceptional ability to make these topics accessible to diverse audiences. She has a rare talent for turning complex scientific concepts into inspiring conversations about the future.
+      </p>
+      <div class="who">
+        <div class="av">ZL</div>
+        <div>
+          <div class="nm">Zélie Lessieur</div>
+          <div class="rl">Teach Revolution</div>
+        </div>
+      </div>
+    </article>
+
+    <!-- TESTIMONIAL 7 -->
+    <article class="tcard">
+      <span class="qm">“</span>
+      <p class="tq">
+        Collaborating with Gianna at Nexa has shown me what mission-driven leadership looks like. She combines technical expertise with a genuine commitment to social impact, always keeping people and purpose at the center of her work. Her vision inspires those around her to think bigger and contribute meaningfully to the communities we serve.
+      </p>
+      <div class="who">
+        <div class="av">LB</div>
+        <div>
+          <div class="nm">Larissa Beiriz</div>
+          <div class="rl">Nexa Global Impact</div>
+        </div>
+      </div>
+    </article>
+
+    <!-- TESTIMONIAL 8 -->
+    <article class="tcard">
+      <span class="qm">“</span>
+      <p class="tq">
+        I had the pleasure of organizing an online event for GAUC with Gianna. She collaborated with me exceptionally well and delivered an excellent presentation on how to use artificial intelligence and NASA satellite data to predict future climate changes and weather patterns, as well as their broader impact. Her contributions were both informative and inspiring. I highly recommend Gianna for future work and collaborations.
+      </p>
       <div class="who">
         <div class="av">H</div>
         <div>
           <div class="nm">Hawaesha</div>
-          <div class="rl">BBA Marketing · HPAIR Selected · Aspire Leadership · Climate X Leadership</div>
-          <div class="dt">Oct 18, 2026 · Trabajamos juntas en el mismo equipo</div>
+          <div class="rl">Climate X Leadership</div>
         </div>
       </div>
-    </article> 
+    </article>
 
-
-    <!-- TESTIMONIAL 2 -->
-    <article class="tcard"> 
-      <span class="qm">“</span> 
+    <!-- TESTIMONIAL 9 -->
+    <article class="tcard">
+      <span class="qm">“</span>
       <p class="tq">
-        Trabajar con Gianna significa trabajar con alguien que combina sólidas 
-        habilidades técnicas con una actitud proactiva. Cualquier equipo tendría 
-        suerte de contar con ella para desarrollar soluciones digitales con un 
-        propósito significativo.
-      </p> 
+        Working with Gianna means working with someone who combines strong technical skills with a proactive attitude. Any team would be lucky to have her on board to develop digital solutions with a meaningful purpose.
+      </p>
       <div class="who">
         <div class="av">SF</div>
         <div>
           <div class="nm">Shiza Fatima</div>
-          <div class="rl">Business Development @ InventStarts · React Native Developer · UI/UX & Figma Designer</div>
+          <div class="rl">UI/UX Designer collaborator</div>
         </div>
       </div>
     </article>
 
-
-    <!-- TESTIMONIAL 3 -->
-    <article class="tcard"> 
-      <span class="qm">“</span> 
+    <!-- TESTIMONIAL 10 -->
+    <article class="tcard">
+      <span class="qm">“</span>
       <p class="tq">
-        ¡Muchas gracias Gianna! Tu guía como mentora en LALA fue de mucha ayuda. 
-        Tus preguntas fueron muy buenas y me hicieron preguntarme cosas que hace 
-        mucho no pensaba o me detenía a explorar 🫶🏼🫶🏼
-      </p> 
+        Thank you so much, Gianna! Your guidance as a mentor at LALA was incredibly helpful. Your questions were excellent—they prompted me to reflect on things I hadn’t thought about or taken the time to explore in a long time 🫶🏼🫶🏼
+      </p>
       <div class="who">
         <div class="av">MS</div>
         <div>
           <div class="nm">Myrahis Sanluis Cerezo</div>
-          <div class="rl">LALA · Latin American Leadership Academy</div>
+          <div class="rl">Latin American Leadership Academy (LALA)</div>
         </div>
       </div>
     </article>
 
-
-    <!-- TESTIMONIAL 4 — PLACEHOLDER -->
-    <article class="tcard"> 
-      <span class="qm">“</span> 
-      <p class="tq">
-        Your next testimonial will go here. 
-        Replace this text with a real comment once you receive it.
-      </p> 
-      <div class="who">
-        <div class="av">?</div>
-        <div>
-          <div class="nm">Your next testimonial</div>
-          <div class="rl">Role / Organization</div>
-          <div class="dt">Date · How we worked together</div>
-        </div>
-      </div>
-    </article>
-
-
-    <!-- TESTIMONIAL 5 — PLACEHOLDER -->
-    <article class="tcard"> 
-      <span class="qm">“</span> 
-      <p class="tq">
-        Your next testimonial will go here. 
-        Replace this text with a real comment once you receive it.
-      </p> 
-      <div class="who">
-        <div class="av">?</div>
-        <div>
-          <div class="nm">Your next testimonial</div>
-          <div class="rl">Role / Organization</div>
-          <div class="dt">Date · How we worked together</div>
-        </div>
-      </div>
-    </article>
-
-
-    <!-- TESTIMONIAL 6 — PLACEHOLDER -->
-    <article class="tcard"> 
-      <span class="qm">“</span> 
-      <p class="tq">
-        Your next testimonial will go here. 
-        Replace this text with a real comment once you receive it.
-      </p> 
-      <div class="who">
-        <div class="av">?</div>
-        <div>
-          <div class="nm">Your next testimonial</div>
-          <div class="rl">Role / Organization</div>
-          <div class="dt">Date · How we worked together</div>
-        </div>
-      </div>
-    </article>
-
-
-    <!-- TESTIMONIAL 7 — PLACEHOLDER -->
-    <article class="tcard"> 
-      <span class="qm">“</span> 
-      <p class="tq">
-        Your next testimonial will go here. 
-        Replace this text with a real comment once you receive it.
-      </p> 
-      <div class="who">
-        <div class="av">?</div>
-        <div>
-          <div class="nm">Your next testimonial</div>
-          <div class="rl">Role / Organization</div>
-          <div class="dt">Date · How we worked together</div>
-        </div>
-      </div>
-    </article>
-
-
-    <!-- TESTIMONIAL 8 — PLACEHOLDER -->
-    <article class="tcard"> 
-      <span class="qm">“</span> 
-      <p class="tq">
-        Your next testimonial will go here. 
-        Replace this text with a real comment once you receive it.
-      </p> 
-      <div class="who">
-        <div class="av">?</div>
-        <div>
-          <div class="nm">Your next testimonial</div>
-          <div class="rl">Role / Organization</div>
-          <div class="dt">Date · How we worked together</div>
-        </div>
-      </div>
-    </article>
-
-
-    <!-- TESTIMONIAL 9 — PLACEHOLDER -->
-    <article class="tcard"> 
-      <span class="qm">“</span> 
-      <p class="tq">
-        Your next testimonial will go here. 
-        Replace this text with a real comment once you receive it.
-      </p> 
-      <div class="who">
-        <div class="av">?</div>
-        <div>
-          <div class="nm">Your next testimonial</div>
-          <div class="rl">Role / Organization</div>
-          <div class="dt">Date · How we worked together</div>
-        </div>
-      </div>
-    </article>
-
-
-    <!-- TESTIMONIAL 10 — PLACEHOLDER -->
-    <article class="tcard"> 
-      <span class="qm">“</span> 
-      <p class="tq">
-        Your next testimonial will go here. 
-        Replace this text with a real comment once you receive it.
-      </p> 
-      <div class="who">
-        <div class="av">?</div>
-        <div>
-          <div class="nm">Your next testimonial</div>
-          <div class="rl">Role / Organization</div>
-          <div class="dt">Date · How we worked together</div>
-        </div>
-      </div>
-    </article>
-
-  </div> 
+  </div>
 
   <div class="tctrl">
     <button id="tprev" aria-label="Previous">←</button>
