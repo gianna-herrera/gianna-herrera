@@ -1,0 +1,215 @@
+/* ===== CERTIFICATIONS: Stacked Card Scroll + ventana glassmorphic ===== */
+
+#certifications{padding-top:20px}
+.stack{margin-top:48px;padding-bottom:6vh}
+
+/* Cada tarjeta se queda "pegada" (sticky) en el centro de la pantalla;
+   la siguiente sube y se superpone. certs.js reduce y oscurece las que quedan detrás. */
+.scard{
+  --h:clamp(400px,62svh,470px);
+  position:sticky;
+  top:max(84px,calc((100svh - var(--h)) / 2));
+  margin-bottom:16vh;
+}
+.scard:last-child{margin-bottom:0}
+
+.scard-in{
+  position:relative;
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:clamp(20px,3vw,44px);
+  height:var(--h);
+  padding:clamp(20px,min(3vw,4.6svh),40px);
+  border-radius:34px;
+  background:var(--c);
+  color:var(--t);
+  border:1px solid var(--ln);
+  box-shadow:0 -18px 60px rgba(0,0,0,.45);
+  transform-origin:50% 0;
+  will-change:transform;
+  overflow:hidden;
+}
+/* Velo oscuro que aumenta cuando la tarjeta queda detrás de otras */
+.scard-in::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:inherit;
+  background:#07050c;
+  opacity:var(--dim,0);
+  pointer-events:none;
+}
+
+/* Columna de texto */
+.sbody{display:flex;flex-direction:column;justify-content:space-between;gap:14px;min-width:0}
+.stop{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.sorg{
+  display:inline-block;
+  padding:6px 14px;
+  border:1px solid var(--ln);
+  border-radius:99px;
+  font-size:.72rem;
+  font-weight:600;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.sidx{font-family:var(--serif);font-style:italic;font-size:1.6rem;line-height:1;opacity:.55}
+
+.smain h3{
+  font-size:clamp(1.3rem,min(2.5vw,4.3svh),2.3rem);
+  line-height:1.08;
+  font-weight:600;
+  letter-spacing:-.025em;
+  margin:0 0 .6rem;
+}
+.smain h3 .tail{display:block;opacity:.5}   /* segunda línea atenuada, como en la referencia */
+.smain p{
+  font-size:clamp(.82rem,min(1.05vw,1.9svh),.96rem);
+  line-height:1.55;
+  opacity:.84;
+  max-width:50ch;
+}
+
+/* Fila inferior: EXPLORE + 100% score */
+.sfoot{display:flex;align-items:center;flex-wrap:wrap;gap:14px 22px}
+.explore{
+  display:inline-flex;
+  align-items:center;
+  gap:12px;
+  background:none;
+  border:0;
+  padding:0;
+  color:inherit;
+  font:600 .78rem/1 var(--sans);
+  letter-spacing:.14em;
+  cursor:pointer;
+}
+.explore .ico{
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:var(--t);
+  color:var(--c);
+  transition:transform .35s cubic-bezier(.2,.8,.2,1);
+}
+.explore .ico svg{width:14px;height:14px}
+.explore:hover .ico{transform:scale(1.14) rotate(8deg)}
+.explore:focus-visible{outline:2px solid currentColor;outline-offset:6px;border-radius:99px}
+
+.score{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 14px;
+  border:1px solid var(--ln);
+  border-radius:99px;
+  font-size:.76rem;
+  font-weight:600;
+  letter-spacing:.04em;
+}
+.score svg{width:14px;height:14px}
+
+/* Imagen de la tarjeta (al costado) */
+.simg{position:relative;border-radius:22px;min-height:0}
+.simg img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center}
+.simg.empty{background:var(--ph);display:grid;place-items:center}
+.simg.empty::after{
+  content:attr(data-label);
+  font-size:.68rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  opacity:.6;
+  text-align:center;
+  padding:10px;
+}
+
+/* ===== Ventana flotante glassmorphic ===== */
+.cmodal{
+  position:fixed;
+  inset:0;
+  z-index:100;
+  display:grid;
+  place-items:center;
+  padding:24px;
+  background:rgba(5,3,10,.72);
+  -webkit-backdrop-filter:blur(8px);
+  backdrop-filter:blur(8px);
+  opacity:0;
+  visibility:hidden;
+  transition:opacity .35s ease,visibility 0s linear .35s;
+  overscroll-behavior:contain;
+}
+.cmodal.open{opacity:1;visibility:visible;transition:opacity .35s ease}
+
+.cwin{
+  width:min(920px,100%);
+  max-height:100%;
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+  padding:20px;
+  border-radius:28px;
+  border:1px solid rgba(255,255,255,.2);
+  background:linear-gradient(150deg,rgba(255,255,255,.14),rgba(255,255,255,.04));
+  -webkit-backdrop-filter:blur(26px) saturate(150%);
+  backdrop-filter:blur(26px) saturate(150%);
+  box-shadow:0 40px 120px rgba(0,0,0,.6),inset 0 1px 0 rgba(255,255,255,.22);
+  transform:translateY(26px) scale(.95);
+  transition:transform .45s cubic-bezier(.2,.8,.2,1);
+}
+.cmodal.open .cwin{transform:none}
+
+.chead{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:4px 4px 0 6px}
+.corg{font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--pur-l)}
+.ctitle{font-size:clamp(1rem,2.2vw,1.35rem);font-weight:600;line-height:1.25;margin-top:4px;color:var(--ink)}
+.cclose{
+  flex:none;
+  width:40px;
+  height:40px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  border:1px solid rgba(255,255,255,.22);
+  background:rgba(255,255,255,.08);
+  color:var(--ink);
+  cursor:pointer;
+  transition:.3s;
+}
+.cclose svg{width:14px;height:14px}
+.cclose:hover{background:var(--pur-l);color:#0a0612;transform:rotate(90deg)}
+.cclose:focus-visible{outline:2px solid var(--pur-l);outline-offset:3px}
+
+.cframe{
+  min-height:0;
+  display:grid;
+  place-items:center;
+  border-radius:18px;
+  overflow:hidden;
+  background:rgba(0,0,0,.22);
+}
+.cframe img{display:block;max-width:100%;max-height:calc(100svh - 190px);width:auto;height:auto;object-fit:contain}
+.cframe.empty{aspect-ratio:4/3;width:100%}
+.cframe.empty img{display:none}
+.cframe.empty::after{
+  content:attr(data-label);
+  font-size:.7rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--mute);
+  text-align:center;
+  padding:12px;
+}
+
+/* ===== Móvil ===== */
+@media(max-width:760px){
+  .scard{--h:auto;top:76px}
+  .scard-in{grid-template-columns:1fr;height:auto;min-height:0;gap:18px;border-radius:28px}
+  .simg{order:-1;height:130px}
+  .smain h3{font-size:1.45rem}
+  .smain p{font-size:.86rem;line-height:1.55}
+  .sidx{font-size:1.3rem}
+  .cmodal{padding:14px}
+  .cwin{padding:14px;border-radius:22px}
+}
