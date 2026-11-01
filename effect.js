@@ -41,9 +41,7 @@ document.getElementById('burger').onclick=function(){m.classList.toggle('open')}
 m.querySelectorAll('a').forEach(function(a){a.onclick=function(){m.classList.remove('open')}});
 document.querySelectorAll('.g').forEach(function(c){c.addEventListener('mousemove',function(e){var r=c.getBoundingClientRect();c.style.setProperty('--x',e.clientX-r.left+'px');c.style.setProperty('--y',e.clientY-r.top+'px')})});
 // GSAP
-/* Se ejecuta en cuanto el HTML está listo (no espera a las imágenes), así la entrada del hero no depende de la descarga de Gargantúa */
-function onReady(fn){document.readyState==='loading'?document.addEventListener('DOMContentLoaded',fn):fn()}
-onReady(function(){
+window.addEventListener('load',function(){
   if(!window.gsap)return; gsap.registerPlugin(ScrollTrigger);
   var t=gsap.timeline({defaults:{ease:'power4.out'}});
   t.from('nav',{y:-70,opacity:0,duration:.9})
