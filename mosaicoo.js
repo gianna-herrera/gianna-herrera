@@ -1,4 +1,4 @@
-/* gsap viene del <script> de CDN (variable global), no se importa */
+
 
 const TILES_X = 12;
 const TILES_Y = 9;
@@ -76,7 +76,7 @@ function resolveImage(path, i) {
 const mosaicEl = document.querySelector(".mosaic");
 const previewEl = document.querySelector(".project-preview");
 
-/* ---------- Responsive: escalar el mosaico al ancho del contenedor ---------- */
+
 function fit() {
   const s = mosaicEl.clientWidth / PREVIEW_WIDTH;
   previewEl.style.transform = `scale(${s})`;
@@ -85,7 +85,7 @@ function fit() {
 fit();
 new ResizeObserver(fit).observe(mosaicEl);
 
-/* ---------- Construcción de fichas ---------- */
+
 const tiles = [];
 
 for (let row = 0; row < TILES_Y; row++) {
@@ -130,7 +130,6 @@ function applyDefault() {
   });
 }
 
-/* ---------- Efecto "respirar" ---------- */
 function breathe(tileElement) {
   gsap.to(tileElement, {
     z: gsap.utils.random(-40, 40),
@@ -205,19 +204,19 @@ function stopAutoplay() {
   timer = null;
 }
 
-/* Pausar cuando el mosaico no está en pantalla */
+
 new IntersectionObserver((entries) => {
   inView = entries[0].isIntersecting;
 }).observe(mosaicEl);
 
-/* Clic o toque: pasa a la siguiente imagen y reinicia el contador */
+
 mosaicEl.addEventListener("click", () => {
   if (isRevealing) return;
   revealProject((activeProject + 1) % PROJECT_IMAGES.length);
   startAutoplay();
 });
 
-/* Comprobar qué imágenes existen, mostrar la primera e iniciar */
+
 Promise.all(PROJECT_IMAGES.map(resolveImage)).then((resolved) => {
   resolved.forEach((src, i) => { PROJECT_IMAGES[i] = src; });
   applyDefault();
