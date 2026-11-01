@@ -6,12 +6,21 @@
 <title>Gianna Herrera — Technology & AI for Climate</title>
 <link rel="icon" href="https://res.cloudinary.com/dwqfcuytt/image/upload/f_auto,q_auto,w_400/v1793523705/icon_snz6hy.png">
 <link rel="preconnect" href="https://res.cloudinary.com">
+<link rel="preload" as="image" fetchpriority="high" href="https://res.cloudinary.com/dwqfcuytt/image/upload/f_auto,q_auto,w_1920/v1793523703/gargantua_ds09l8.jpg" imagesrcset="https://res.cloudinary.com/dwqfcuytt/image/upload/f_auto,q_auto,w_640/v1793523703/gargantua_ds09l8.jpg 640w, https://res.cloudinary.com/dwqfcuytt/image/upload/f_auto,q_auto,w_1080/v1793523703/gargantua_ds09l8.jpg 1080w, https://res.cloudinary.com/dwqfcuytt/image/upload/f_auto,q_auto,w_1920/v1793523703/gargantua_ds09l8.jpg 1920w" imagesizes="100vw">
+<link rel="preload" as="image" fetchpriority="high" href="https://res.cloudinary.com/dwqfcuytt/image/upload/f_auto,q_auto,w_800/v1793523709/g_uwzuiu.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="mosaicoo.css">
 <link rel="stylesheet" href="journey-cover.css">
 <link rel="stylesheet" href="certs.css">
+<style>
+/* Hero: placeholder borroso instantáneo + fundido suave de la imagen cuando termina de cargar */
+.hero-bg{background:#0b0712 url("https://res.cloudinary.com/dwqfcuytt/image/upload/f_auto,q_auto,w_48,e_blur:800/v1793523703/gargantua_ds09l8.jpg") center/cover no-repeat}
+.hero-bg img{opacity:0;transition:opacity 1.4s ease,transform .8s}
+.hero-bg img.loaded{opacity:1}
+</style>
+<noscript><style>.hero-bg img{opacity:1}</style></noscript>
 </head>
 <body>
 <div id="bar"></div><canvas id="stars"></canvas>
@@ -28,7 +37,7 @@
 
 <header id="hero">
 
-  <div class="ph hero-bg" data-label=""><img src="https://res.cloudinary.com/dwqfcuytt/image/upload/f_auto,q_auto,w_1920/v1793523703/gargantua_ds09l8.jpg" alt="" fetchpriority="high" decoding="async" onerror="this.remove()"></div>
+  <div class="ph hero-bg" data-label=""><img src="https://res.cloudinary.com/dwqfcuytt/image/upload/f_auto,q_auto,w_1920/v1793523703/gargantua_ds09l8.jpg" srcset="https://res.cloudinary.com/dwqfcuytt/image/upload/f_auto,q_auto,w_640/v1793523703/gargantua_ds09l8.jpg 640w, https://res.cloudinary.com/dwqfcuytt/image/upload/f_auto,q_auto,w_1080/v1793523703/gargantua_ds09l8.jpg 1080w, https://res.cloudinary.com/dwqfcuytt/image/upload/f_auto,q_auto,w_1920/v1793523703/gargantua_ds09l8.jpg 1920w" sizes="100vw" alt="" fetchpriority="high" decoding="async" onload="this.classList.add('loaded')" onerror="this.remove()"></div>
   <span class="spark" style="left:12%;top:24%">✦</span><span class="spark" style="right:14%;top:30%">✦</span><span class="spark" style="left:30%;top:60%">✦</span>
   <div class="stage">
     <div class="title">
