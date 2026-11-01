@@ -44,6 +44,7 @@ document.querySelectorAll('.g').forEach(function(c){c.addEventListener('mousemov
 /* Se ejecuta en cuanto el HTML está listo (no espera a las imágenes), así la entrada del hero no depende de la descarga de Gargantúa */
 function onReady(fn){document.readyState==='loading'?document.addEventListener('DOMContentLoaded',fn):fn()}
 onReady(function(){
+  document.documentElement.classList.remove('intro'); /* GSAP fija el estado inicial en este mismo instante: sin parpadeo */
   if(!window.gsap)return; gsap.registerPlugin(ScrollTrigger);
   var t=gsap.timeline({defaults:{ease:'power4.out'}});
   t.from('nav',{y:-70,opacity:0,duration:.9})

@@ -5,6 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Gianna Herrera — Technology & AI for Climate</title>
 <link rel="icon" href="https://res.cloudinary.com/dwqfcuytt/image/upload/f_auto,q_auto,w_400/v1793523705/icon_snz6hy.png">
+<script>
+/* El hero arranca oculto (clase "intro") y effect.js la quita justo antes de animarlo:
+   así no se ve el hero "completo" y luego reiniciado. Si el JS tarda o falla, se muestra a los 4 s. */
+document.documentElement.classList.add('intro');
+setTimeout(function(){document.documentElement.classList.remove('intro')},4000);
+</script>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+<link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js">
+<link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js">
 <link rel="preconnect" href="https://res.cloudinary.com">
 <link rel="preload" as="image" fetchpriority="high" href="https://res.cloudinary.com/dwqfcuytt/image/upload/f_auto,q_auto,w_1920/v1793523703/gargantua_ds09l8.jpg" imagesrcset="https://res.cloudinary.com/dwqfcuytt/image/upload/f_auto,q_auto,w_640/v1793523703/gargantua_ds09l8.jpg 640w, https://res.cloudinary.com/dwqfcuytt/image/upload/f_auto,q_auto,w_1080/v1793523703/gargantua_ds09l8.jpg 1080w, https://res.cloudinary.com/dwqfcuytt/image/upload/f_auto,q_auto,w_1920/v1793523703/gargantua_ds09l8.jpg 1920w" imagesizes="100vw">
 <link rel="preload" as="image" fetchpriority="high" href="https://res.cloudinary.com/dwqfcuytt/image/upload/f_auto,q_auto,w_800/v1793523709/g_uwzuiu.png">
@@ -19,6 +28,7 @@
 .hero-bg{background:#0b0712 url("https://res.cloudinary.com/dwqfcuytt/image/upload/f_auto,q_auto,w_48,e_blur:800/v1793523703/gargantua_ds09l8.jpg") center/cover no-repeat}
 .hero-bg img{opacity:0;transition:opacity 1.4s ease,transform .8s}
 .hero-bg img.loaded{opacity:1}
+html.intro nav,html.intro .title .pill,html.intro .title .row1 span,html.intro .title .big,html.intro .portrait,html.intro .chip,html.intro .hero-foot>*{opacity:0}
 </style>
 <noscript><style>.hero-bg img{opacity:1}</style></noscript>
 </head>
