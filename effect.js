@@ -23,11 +23,31 @@ const GALLERY=[
   "https://res.cloudinary.com/dwqfcuytt/image/upload/f_auto,q_auto,w_800/v1793523900/20_bbtac4.jpg",
   "https://res.cloudinary.com/dwqfcuytt/image/upload/f_auto,q_auto,w_800/v1793523902/21_s9lahc.jpg"]
 ];
+
+/* ALT de la galería.
+   Para describir una foto concreta, añade una línea con el nombre de su archivo (sin extensión) y su descripción, p. ej.:
+   '1_htetyh':'Gianna Herrera presenting AI and NASA open data to students in Lima',
+   Las fotos sin descripción usan el texto genérico de ALT_DEFAULT. */
+const ALTS={
+  /* '1_htetyh':'', */
+};
+const ALT_DEFAULT='Gianna Herrera, moments and missions in technology, climate and leadership';
+
 const rows=document.getElementById('rows');
+function tile(o,hide){
+  return '<div class="ph" data-label="'+o.f+'"'+(hide?' aria-hidden="true"':'')+'><img src="'+o.u+'" alt="'+(hide?'':o.alt)+'" loading="lazy" decoding="async" onerror="this.remove()"></div>';
+}
+var photoN=0;
 GALLERY.forEach(function(r,i){
   var d=document.createElement('div');d.className='rowm'+(i%2?' rev':'');
-  var html=r.map(function(u){var f=u.split('/').pop();return '<div class="ph" data-label="'+f+'"><img src="'+u+'" alt="" loading="lazy" decoding="async" onerror="this.remove()"></div>'}).join('');
-  d.innerHTML=html+html; rows.appendChild(d);
+  var items=r.map(function(u){
+    var f=u.split('/').pop(),k=f.split('.')[0];photoN++;
+    var a=(ALTS[k]||(ALT_DEFAULT+', photo '+photoN)).replace(/"/g,'&quot;');
+    return {u:u,f:f,alt:a};
+  });
+  /* 1ª copia con alt; 2ª copia (solo para el bucle de la marquesina) oculta a lectores de pantalla y sin alt */
+  d.innerHTML=items.map(function(o){return tile(o,false)}).join('')+items.map(function(o){return tile(o,true)}).join('');
+  rows.appendChild(d);
 });
 
 // starfield
