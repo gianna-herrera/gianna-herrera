@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.giannaherrera.dev/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dwqfcuytt/image/upload/f_auto,q_auto,w_800/v1793523709/g_uwzuiu.png</image:loc>
+      <image:title>Gianna Herrera</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dwqfcuytt/image/upload/f_auto,q_auto,w_1200/v1793523613/1_c4buf5.png</image:loc>
+      <image:title>Nexa Global Impact</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dwqfcuytt/image/upload/f_auto,q_auto,w_1200/v1793523615/2_s3rkov.png</image:loc>
+      <image:title>AI Early-Warning Framework</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dwqfcuytt/image/upload/f_auto,q_auto,w_1200/v1793523616/3_garvce.png</image:loc>
+      <image:title>Eco Warmi</image:title>
+    </image:image>
+  </url>
+</urlset>
