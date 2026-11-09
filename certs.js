@@ -77,7 +77,7 @@
 
     img.onload  = function () { frame.classList.remove('empty'); };
     img.onerror = function () { frame.classList.add('empty'); };
-    img.alt = btn.getAttribute('data-title') + ' — certificate';
+    img.alt = btn.getAttribute('data-org') + ' certificate in ' + btn.getAttribute('data-title') + ', earned by Gianna Herrera';
     img.src = src;
 
     modal.classList.add('open');
