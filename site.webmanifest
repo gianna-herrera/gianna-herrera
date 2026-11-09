@@ -1,0 +1,25 @@
+{
+  "name": "Gianna Herrera — Technology & AI for Climate",
+  "short_name": "Gianna Herrera",
+  "description": "Portfolio of Gianna Herrera: software development, AI for climate and social impact.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0b0712",
+  "theme_color": "#0b0712",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "https://res.cloudinary.com/dwqfcuytt/image/upload/f_png,q_auto,w_192,h_192,c_fill/v1793523705/icon_snz6hy.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://res.cloudinary.com/dwqfcuytt/image/upload/f_png,q_auto,w_512,h_512,c_fill/v1793523705/icon_snz6hy.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
