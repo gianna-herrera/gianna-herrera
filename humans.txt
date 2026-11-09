@@ -2,6 +2,7 @@
 Name: Gianna Herrera
 Role: Developer, designer, founder of Nexa Global Impact
 Site: https://www.giannaherrera.dev/
+Contact: contact@giannaherrera.dev
 LinkedIn: https://www.linkedin.com/in/gianna-herrera
 Location: Lima, Peru
 
