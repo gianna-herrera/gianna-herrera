@@ -1,0 +1,12 @@
+/* TEAM */
+Name: Gianna Herrera
+Role: Developer, designer, founder of Nexa Global Impact
+Site: https://www.giannaherrera.dev/
+LinkedIn: https://www.linkedin.com/in/gianna-herrera
+Location: Lima, Peru
+
+/* SITE */
+Last update: 2026/11/08
+Language: English
+Standards: HTML5, CSS3, JavaScript
+Components: GSAP, ScrollTrigger
