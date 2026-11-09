@@ -1,0 +1,31 @@
+# Gianna Herrera
+
+> Software development student, AI for climate practitioner and founder of Nexa Global Impact, based in Lima, Peru. She builds accessible digital solutions for underserved communities, grassroots organizations and animal shelters, and works on AI for climate, disaster risk reduction, digital inclusion, youth leadership and STEM education.
+
+Official website: https://www.giannaherrera.dev/
+LinkedIn: https://www.linkedin.com/in/gianna-herrera
+
+## About
+- Founder & Project Lead of Nexa Global Impact (since May 2026): multi-tenant platform to digitalize and support local animal shelters in Peru.
+- Technical Degree in Software Development, ISIL Aprende Haciendo (2022–2025). Top Graduate, GPA 19.60/20.
+- UNITAR Leadership Fellow, Women's Leadership in Disaster Risk Reduction (one of 500 fellows worldwide).
+- Section Leader, Stanford University Code in Place.
+- Climate x Scholar, Global Alliance of Universities on Climate (GAUC): AI-driven early-warning framework using NASA Earthdata and Copernicus imagery.
+- Selected participant, GCI World 2026, University of Tokyo Matsuo-Iwasawa Lab.
+- Research Trainee, Climate Change AI Summer School.
+- Board Member, University of New Haven Women in Leadership with AI-Driven Engagement Executive Program.
+- Leadership Mentor, Latin American Leadership Academy (LALA).
+- Campus Lead (Peru), Aspire Institute.
+
+## Projects
+- Nexa Global Impact: platform to digitalize local animal shelters in Peru.
+- AI Early-Warning Framework: computer vision with NASA Earthdata and Copernicus imagery for vulnerable communities.
+- Eco Warmi: climate education for adolescents in vulnerable schools across Lima.
+- TechHer Revolution: AI and NASA open-data keynotes for girls aged 13–17 (Australian Embassy).
+- School of Leaders: virtual STEM education reaching 1000+ children across Peru.
+
+## Expertise
+AI for climate, remote sensing (NASA ARSET), Python, data science and machine learning, software development, disaster risk reduction, digital inclusion, ethics of AI (UNESCO), mentoring.
+
+## Contact
+https://www.linkedin.com/in/gianna-herrera
